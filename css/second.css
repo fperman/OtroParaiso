@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generalidades*/
+
+
+body {
+    background-color: #F5DADA;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* color de fondo y tripografía*/
+
+.navbar {
+    margin: 1em;
+}
+
+.navbar .navbar-brand {
+    color: #0C0C0C;
+    font-weight: 700;
+    font-size: 1.2em;
+
+}
+
+/* logo*/
+
+.navbar .nav-item .nav-link {
+    color: #0C0C0C;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1em;
+    padding: .1em 1em;
+    transition: all 1s;
+}
+
+/* color de los links*/
+
+.navbar .nav-item .nav-link:hover {
+    background-color: #F19783;
+}
+
+/* NAV MÓVILES PEQUEÑOS */
+
+@media only screen and (max-device-width: 480px) {
+  
+    .navbar .navbar-brand {
+        font-size: 1em;
+    
+    } /* logo*/
+    
+    .navbar .nav-item .nav-link {
+        font-size: .8em;
+    }
+}
+
+/* NAV MÓVILES MEDIOS */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+
+    .navbar .navbar-brand {
+        font-size: 1.1em;
+    
+    } /* logo*/
+    
+    .navbar .nav-item .nav-link {
+        font-size: .9em;
+    }
+}
+
+
+/* ------------------ INDEX ------------------------------------ */
+
+.subtítulo {
+    color: #151515;
+    letter-spacing: 0.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 1em;
+    font-size: 1em;
+}
+
+/* subtítulos en general */
+
+.título {
+    color: #151515;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4em;
+
+}
+
+/* títulos en index.html */
+
+
+.paraiso {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+/* palabra PARAÍSO*/
+
+.paraiso::before {
+    content: "";
+    position: absolute;
+    width: 4.6em;
+    background: #f19783;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 0, .1em;
+    margin-bottom: 0.2em;
+    animation-name: linea;
+    animation-duration: 4s;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* línea palabra PARÁISO*/
+
+@keyframes linea {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+
+}
+
+.hero .plato-principal:hover {
+    transform: rotate(180deg);
+}
+
+/* rotación imagen plato */
+
+.home {
+    margin-top: 1em;
+}
+
+/* sector medio*/
+
+.home .linea-horizontal {
+    /* linea home */
+    border: 1px solid #3A3A3A;
+    border-radius: 5px;
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.home .texto-medio {
+    color: #3A3A3A;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* sección medio */
+
+.home .texto-chico {
+    color: #898989;
+    font-weight: 400;
+    font-size: 0, 7em;
+}
+
+/* sección medio */
+
+
+.restaurante-img {
+    height: fit-content;
+    object-fit: cover;
+    object-position: left bottom
+}
+
+/* sección COVID imagen*/
+
+.home2-box {
+    padding: 2em;
+    max-width: 100%;
+    background-color: #F19783;
+}
+
+/* sección COVID box con texto*/
+
+.home2-box .título-secundario {
+    color: #151515;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/* sección COVID título*/
+
+.home2-box .linea-horizontal2 {
+    width: 23em;
+    background: #F5DADA;
+    border: none;
+    border-radius: 2px;
+    height: .4em;
+    margin-left: 0em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* sección COVID box línea horizontal*/
+
+
+.home2-box .boton-reserva {
+    background-color: #F19783;
+    width: 15em;
+    height: 4.5em;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3A3A3A;
+    color: white;
+    font-weight: bold;
+    border-radius: .7em;
+    font-size: 0.9em;
+    padding: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-top: 3em;
+}
+
+/* sección COVID box botón*/
+
+.home2-box .boton-reserva:hover {
+    background-color: #eec8c0;
+    transform: translatey(2px)
+}
+
+/* sección COVID box botón ancimación*/
+
+
+/* NAV MÓVILES PEQUEÑOS */
+
+@media only screen and (max-device-width: 480px) {
+  
+    .subtítulo {
+        letter-spacing: 0.6em;
+        font-size: 0.8em;
+    }    /* subtítulos en general */
+       
+    .título {
+        font-size: 3em;  
+    }     /* títulos en index.html */
+    
+    .home {
+        margin-top: 1em;
+    }     /* sector medio*/
+      
+    .home .texto-medio {
+        font-size: 0.8em;
+    }     /* sección medio */
+    
+    .home .texto-chico {
+        font-size: 0.7em;
+    }     /* sección medio */
+    
+    .home2-box .título-secundario {
+        font-size: 1.5em;
+    }     /* sección COVID título*/
+      
+    .home2-box .linea-horizontal2 {
+        width: 18em;
+    }     /* sección COVID box línea horizontal*/
+       
+    .home2-box .boton-reserva {
+        width: 12em;
+        height: 4em;
+    }     /* sección COVID box botón*/
+}
+
+/* NAV MÓVILES MEDIOS */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
+
+    .subtítulo {
+        letter-spacing: 0.7em;
+        font-size: 1em;
+    }    /* subtítulos en general */
+       
+    .título {
+        font-size: 3.5em;  
+    }     /* títulos en index.html */
+    
+    .home .texto-medio {
+        font-size: 0.9em;
+    }     /* sección medio */
+    
+    .home .texto-chico {
+        font-size: 0.8em;
+    }     /* sección medio */
+    
+    .home2-box .título-secundario {
+        font-size: 1.7em;
+    }     /* sección COVID título*/
+      
+    .home2-box .linea-horizontal2 {
+        width: 20em;
+    }     /* sección COVID box línea horizontal*/
+       
+    .home2-box .boton-reserva {
+        width: 14em;
+        height: 4.3em;
+    }     /* sección COVID box botón*/
+}
+
+/* ----------------------NOSOTROS.HTML----------------------------- */
+
+.nosotros-titulo { /* sección NOSOTROS título*/
+    color: #3A3A3A;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.nosotros-sub { /* sección NOSOTROS subtítulo*/
+    color: #0C0C0C;
+    font-size: 1.5m;
+    margin-bottom: 1em;
+
+}
+
+.nosotros-texto { /* sección NOSOTROS texto*/
+    color: #151515;
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 2em;
+
+}
+
+.nosotros { /* márgenes carousel*/
+    padding-right: 0; padding-left: 0;
+}
+
+.nosotros-box { /* tamaño sección NOSOTROS*/
+    background-color: #F19783;
+    padding: 1.5em;
+}
+
+
+
+
+/* ------------------FOOTER------------------------------------ */
+
+
+.footer {
+    background-color: #151515;
+    color: #F5DADA;
+    height: 7em;
+    text-align: center;
+}
+
+.footer ul {
+    padding: 1em;
+    list-style: none;
+    font-size: 0.7em;
+    line-height: 1.6;
+    margin-bottom: 0;
+
+}
+
+.footer li {
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+.footerCopyright {
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #F19783;
+    margin-bottom: 1em;
+}
