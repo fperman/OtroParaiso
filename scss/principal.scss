@@ -93,6 +93,9 @@ body {
     font-family: 'Poppins', sans-serif;
 } /* color de fondo y tripografía*/
 
+
+
+
 .navbar {
     margin: 1em;
 
@@ -114,6 +117,65 @@ body {
     .nav-link:hover {
         background-color: color(secundario);
     } /*hover del nav*/
+}
+
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggler span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggler span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed span:nth-child(2),
+.navbar-toggler.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed span:nth-child(3) {
+    opacity: 1;
 }
 
     /* NAV PANTALLA MEDIA */
