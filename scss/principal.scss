@@ -94,8 +94,6 @@ body {
 } /* color de fondo y tripografía*/
 
 
-
-
 .navbar {
     margin: 1em;
 
@@ -120,64 +118,6 @@ body {
 }
 
 
-.navbar-toggle span.icon-bar {
-    transition: all 0.15s;
-}
-
-.navbar-toggle span:nth-child(2) {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-}
-
-.navbar-toggle span:nth-child(3) {
-    opacity: 0;
-}
-
-.navbar-toggle span:nth-child(4) {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-.navbar-toggle.collapsed span:nth-child(2),
-.navbar-toggle.collapsed span:nth-child(4) {
-    transform: rotate(0);
-}
-
-.navbar-toggle.collapsed span:nth-child(3) {
-    opacity: 1;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler span.icon-bar {
-    transition: all 0.15s;
-}
-
-.navbar-toggler span:nth-child(2) {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-}
-
-.navbar-toggler span:nth-child(3) {
-    opacity: 0;
-}
-
-.navbar-toggler span:nth-child(4) {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-.navbar-toggler.collapsed span:nth-child(2),
-.navbar-toggler.collapsed span:nth-child(4) {
-    transform: rotate(0);
-}
-
-.navbar-toggler.collapsed span:nth-child(3) {
-    opacity: 1;
-}
-
     /* NAV PANTALLA MEDIA */
 
     @media (min-width: 480px) and (max-width: 1024px) {
@@ -185,11 +125,11 @@ body {
         .navbar {
                 margin: 1em;
             .navbar-brand {
-                font-size: 1.1em;
+                font-size: .9em;
             } /* logo*/
             
             .nav-item .nav-link {
-                font-size: .9em;
+                font-size: 1.1em;
             }
         }
     }
@@ -205,7 +145,7 @@ body {
             } /* logo*/
             
             .nav-item .nav-link {
-                font-size: .7em;
+                font-size: .8em;
             }
         }
     }
